@@ -39,7 +39,7 @@
 						<div class="inner" style="position:absolute; top:20px; left:30px;">
 
 							<div style="float: left; width: 50%; display: inline-block ">
-								<img style="width: 100%; height: auto" src="images/logo10.png" alt="" data-position="center center" />
+								<img class="image" style="width: 100%; height: auto" src="images/logo10.png" alt="" data-position="center center" />
 
 								<p>Rhythm Rain is a music rhythm game designed to procedurally generate a rhythm based level to the beats of your music. </p>
 								<ul class="actions">
@@ -48,7 +48,7 @@
 							</div>
 
 							<div style="float: left; width: 10%">
-								<img style="width: 500px" src="images/Cloud.png" alt="" data-position="center center" />
+								<img  style="width: 500px" src="images/Cloud.png" alt="" data-position="center center" />
 							</div>
 
 							<div style="float: left; width: 10%; margin-top: 30%; margin-left: 10%">
@@ -66,7 +66,7 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<img src="images/Green_Raindrop.png" alt="" data-position="center center" />
+							<img class="image" style="margin-left: 0; padding-left: 0" src="images/Green_Raindrop.png" alt="" data-position="" />
 							<div class="content">
 								<div class="inner">
 									<h2>The Music</h2>
@@ -75,7 +75,7 @@
 							</div>
 						</section>
 						<section>
-							<img src="images/Blue_Raindrop.png" alt="" data-position="top center" />
+							<img class="image" src="images/Blue_Raindrop.png" alt="" data-position="top center" />
 							<div class="content">
 								<div class="inner">
 									<h2>Gameplay</h2>
@@ -84,7 +84,7 @@
 							</div>
 						</section>
 						<section>
-							<img src="images/Purple_RainDrop.png" alt="" data-position="center center" />
+							<img class="image" src="images/Purple_RainDrop.png" alt="" data-position="center center" />
 							<div class="content">
 								<div class="inner">
 									<h2>iTunes Library</h2>
@@ -135,22 +135,42 @@
 							<p>Contact use for more information about the game or to join the Android Beta</p>
 							<div class="style1">
 								<section>
-									<form method="post" action="#">
-										<div class="field half first">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+									<form class="form-horizontal" role="form" id="form" action="php/contact.php" method="post">
+
+										<div class="form-group">
+											<label for="name" class="col-sm-2 control-label">Name</label>
+											<div class="col-sm-10">
+												<input type="text" class="contact form-control" name="cf_name" id="cf_name" >
+											</div>
 										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+
+										<div class="form-group">
+											<label for="email" class="col-sm-2 control-label">Email</label>
+											<div class="col-sm-10">
+												<input type="email" class="contact form-control" name="cf_email" id="cf_email">
+											</div>
 										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5"></textarea>
+
+										<div class="form-group">
+											<label for="subject" class="col-sm-2 control-label">Subject</label>
+											<div class="col-sm-10">
+												<input type="text" class="contact form-control" name="subject" id="subject" >
+											</div>
 										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
+
+										<div class="form-group">
+											<label for="message" class="col-sm-2 control-label">Message</label>
+											<div class="col-sm-10">
+												<textarea class="contact form-control" rows="3" name="cf_message" id="cf_message" ></textarea>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-10">
+												<input type="submit" value="Send" class="btn btn-default" name="submit">
+
+											</div>
+										</div>
 									</form>
 									<ul class="icons align-center">
 										<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
